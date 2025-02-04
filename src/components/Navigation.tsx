@@ -30,6 +30,7 @@ export function Navigation() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
+      setActiveDropdown(null); // Close dropdown on navigation
     }
   };
 
@@ -69,8 +70,8 @@ export function Navigation() {
                   </a>
                 )}
 
-                {item.children && (
-                  <div className="absolute left-0 mt-2 w-48 bg-[#243F83] rounded-md shadow-lg py-1 hidden group-hover:block">
+                {activeDropdown === item.label && item.children && (
+                  <div className="absolute left-0 mt-2 w-48 bg-[#243F83] rounded-md shadow-lg py-1">
                     {item.children.map((child) => (
                       <a
                         key={child.label}

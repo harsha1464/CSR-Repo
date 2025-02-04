@@ -1,20 +1,19 @@
 import React from 'react';
 import { ContactInfo } from './Contact';
+import GoldSponsor1 from '../Images/Dr Image.jpg';
+import GoldSponsor2 from '../Images/Mana-Panta.jpg';
+import GoldSponsor3 from '../Images/Dr. ved Logo... ( black ).pdf.png';
+import GoldSponsor4 from '../Images/ATMt.jpg';
+import GoldSponsor5 from '../Images/MeraEvents.jpg';
+
 
 const sponsors = {
-  platinum: [
-    { name: 'Platinum Sponsor 1', logo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Platinum Sponsor 2', logo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80' },
-  ],
   gold: [
-    { name: 'Gold Sponsor 1', logo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Gold Sponsor 2', logo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80' },
-  ],
-  silver: [
-    { name: 'Silver Sponsor 1', logo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Silver Sponsor 2', logo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Silver Sponsor 3', logo: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80' },
-    { name: 'Silver Sponsor 4', logo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80' },
+    { name: 'Gold Sponsor 1', logo: GoldSponsor1 },
+    { name: 'Gold Sponsor 2', logo: GoldSponsor2 },
+    { name: 'Gold Sponsor 3', logo: GoldSponsor3 },
+    { name: 'Gold Sponsor 4', logo: GoldSponsor4 },
+    { name: 'Gold Sponsor 5', logo: GoldSponsor5 },
   ],
 };
 
@@ -22,47 +21,21 @@ export function Sponsorships() {
   return (
     <div className="content-section">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-12 section-title text-gradient text-center">Our Sponsors</h1>
+        <h1 className="text-4xl font-bold mb-12 section-title text-gradient text-center">Our Partners</h1>
 
-        {/* Platinum Sponsors */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Platinum Sponsors</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {sponsors.platinum.map((sponsor, index) => (
-              <div key={index} className="enhanced-card p-8 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                <img src={sponsor.logo} alt={sponsor.name} className="h-32 object-contain" />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Gold Sponsors */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Gold Sponsors</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div className="mb-6 w-full mx-auto">
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {sponsors.gold.map((sponsor, index) => (
-              <div key={index} className="enhanced-card p-8 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                <img src={sponsor.logo} alt={sponsor.name} className="h-24 object-contain" />
+              <div key={index} className="enhanced-card p-4 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                <img src={sponsor.logo} alt={sponsor.name} className="w-full h- full object-contain" />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Silver Sponsors - Scrolling */}
-        <div>
-          <h2 className="text-2xl font-bold mb-6 text-center">Silver Sponsors</h2>
-          <div className="overflow-hidden">
-            <div className="flex animate-scroll">
-              {[...sponsors.silver, ...sponsors.silver].map((sponsor, index) => (
-                <div key={index} className="flex-shrink-0 w-64 mx-4">
-                  <div className="enhanced-card p-6 flex items-center justify-center h-32">
-                    <img src={sponsor.logo} alt={sponsor.name} className="h-20 object-contain" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
 
         {/* Donation Section */}
         <div className="mt-16">

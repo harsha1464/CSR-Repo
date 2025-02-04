@@ -6,16 +6,18 @@ const TIER_DATES = {
   regular: new Date('2025-03-10T23:59:59'),
 };
 
-function RegistrationTier({ 
-  title, 
-  price, 
-  date, 
-  isActive 
-}: { 
-  title: string; 
-  price: string; 
+function RegistrationTier({
+  title,
+  price,
+  date,
+  isActive,
+  isExpired,
+}: {
+  title: string;
+  price: string;
   date: string;
   isActive: boolean;
+  isExpired: boolean;
 }) {
   return (
     <div className={`enhanced-card p-8 transform transition-all duration-500 hover:scale-105 ${
@@ -24,21 +26,27 @@ function RegistrationTier({
       <div className="text-2xl font-bold mb-4">{title}</div>
       <div className="text-4xl font-bold mb-4 text-[#243F83]">{price}</div>
       <div className="text-gray-600 mb-4">Valid until {date}</div>
-      <a
-        href="https://meraevents.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block w-full text-center bg-[#BBD921] text-black px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
-      >
-        Register Now
-      </a>
+      {isExpired ? (
+        <div className="block w-full text-center bg-gray-300 text-black px-6 py-3 rounded-md font-semibold">
+          Offer Expired
+        </div>
+      ) : (
+        <a
+          href="https://www.meraevents.com/event/csr-summit-2025"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full text-center bg-[#BBD921] text-black px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
+        >
+          Register Now
+        </a>
+      )}
     </div>
   );
 }
 
 export function Registrations() {
   const now = new Date();
-  const currentTier = now <= TIER_DATES.earlyBird ? 'early' : 
+  const currentTier = now <= TIER_DATES.earlyBird ? 'early' :
                      now <= TIER_DATES.regular ? 'regular' : 'late';
 
   return (
@@ -52,18 +60,21 @@ export function Registrations() {
             price="₹6,000/-"
             date="January 31, 2025"
             isActive={currentTier === 'early'}
+            isExpired={now > TIER_DATES.earlyBird}
           />
           <RegistrationTier
             title="Regular"
             price="₹10,000/-"
             date="March 10, 2025"
             isActive={currentTier === 'regular'}
+            isExpired={now > TIER_DATES.regular}
           />
           <RegistrationTier
             title="Change Maker"
             price="₹25,000/-"
             date="March 10, 2025"
             isActive={currentTier === 'cm'}
+            isExpired={now > TIER_DATES.regular}
           />
         </div>
 

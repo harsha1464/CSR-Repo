@@ -26,8 +26,8 @@ export function Speakers() {
         </div>
         
         <div className="text-center scroll-reveal">
-          <div className="mb-8 inline-flex justify-center">
-            <ContactInfo />
+          <div className="mb-8 inline-flex justify-center mb-12 mt-8 ml-8 mr-8">
+            <ContactInfo email="speakercuration@csrnow.in"/>
           </div>
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"

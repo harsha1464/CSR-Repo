@@ -29,28 +29,42 @@ export default function App() {
         <section id="registrations">
           <Registrations />
         </section>
+        <br/>
+        <br/>
         <section id="awards">
           <Awards />
         </section>
+        <br/>
         <section id="speakers">
           <Speakers />
         </section>
+        <br/>
         <section id="team">
           <Team />
         </section>
+        <br/>
+        <br/>
         <section id="sponsorships">
           <Sponsorships />
         </section>
+        <br/>
+        <br/>
         <section id="itinerary">
           <Itinerary />
         </section>
+        <br/>
+        <br/>
         <section id="faqs">
           <FAQ />
         </section>
+        <br/>
+        <br/>
         <section id="contact">
           <Contact />
         </section>
-        <ContactForm />
+        <br/>
+        <br/>
+        {/* <ContactForm /> */}
         <CookieConsent />
         <FloatingContact />
       </main>

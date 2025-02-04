@@ -20,15 +20,15 @@ export function Awards() {
           </div>
         </div>
         
-        <div className="text-center scroll-reveal">
-          <div className="mb-8 inline-flex justify-center">
-            <ContactInfo />
-          </div>
+        <div className="text-center scroll-reveal space-y-8">
+            <div className="inline-flex justify-center mb-12 mt-8 ml-8 mr-8">
+            <ContactInfo email="awards@csrnow.in" />
+            </div>
           <a 
             href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="cta-button inline-block bg-black text-white px-12 py-4 rounded-md font-semibold text-lg"
+            className="cta-button inline-block bg-black text-white px-12 py-4 rounded-md font-semibold text-lg mt-4 mr-4"
           >
             Register for Awards
           </a>

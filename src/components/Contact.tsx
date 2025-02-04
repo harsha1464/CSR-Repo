@@ -84,7 +84,7 @@ export function Contact() {
   );
 }
 
-export function ContactInfo({ size = 'default' }: { size?: 'default' | 'large' }) {
+export function ContactInfo({ email = 'Connect@csrnow.in', size = 'default' }: { email?: string; size?: 'default' | 'large' }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -122,12 +122,14 @@ export function ContactInfo({ size = 'default' }: { size?: 'default' | 'large' }
       tabIndex={0}
     >
       <Mail className={iconClasses} />
-      <span className={textClasses}>Connect@csrnow.in</span>
+      <span className={textClasses}>{email}</span>
       {copied ? (
         <Check className="w-5 h-5 text-green-500" />
       ) : (
         <Copy className="w-5 h-5 text-gray-400 group-hover:text-gray-600" />
       )}
+      <br/>
     </div>
+    
   );
 }

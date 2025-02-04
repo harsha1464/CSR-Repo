@@ -40,7 +40,7 @@ export function About() {
               <h1 className="text-5xl font-bold mb-12 animate-fade-in">{slide.title}</h1>
               <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
                 <a
-                  href="https://meraevents.com/"
+                  href="https://www.meraevents.com/event/csr-summit-2025"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-[#BBD921] text-black rounded-full font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
