@@ -44,6 +44,23 @@ function RegistrationTier({
   );
 }
 
+function BulkRegistration() {
+  return (
+    <div className="enhanced-card p-4 transform transition-all duration-500 hover:scale-105 border-2 border-[#BBD921]">
+      <div className="text-2xl font-bold mb-4">Bulk Registrations</div>
+      <div className="text-lg mb-4">For bulk registrations, please contact :</div>
+      <div className="text-blue-500 mb-2">
+        <h2 className="text-xl">Sai Yashwanth Simhadri</h2>
+        <br/>
+        <a href="tel:+91 9398624615" className="hover:underline text-lg">+91 9398624615</a>
+      </div>
+      <div className="text-blue-500 text-lg">
+        <a href="mailto:saiyashwanth@csrnow.in" className="hover:underline">saiyashwanth@csrnow.in</a>
+      </div>
+    </div>
+  );
+}
+
 export function Registrations() {
   const now = new Date();
   const currentTier = now <= TIER_DATES.earlyBird ? 'early' :
@@ -76,6 +93,9 @@ export function Registrations() {
             isActive={currentTier === 'cm'}
             isExpired={now > TIER_DATES.regular}
           />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <BulkRegistration />
         </div>
 
         <div className="enhanced-card p-8 mb-8">

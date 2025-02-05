@@ -14,10 +14,12 @@ import { ContactForm } from './components/ContactForm';
 import { CookieConsent } from './components/CookieConsent';
 import { Footer } from './components/Footer';
 import { FloatingContact } from './components/FloatingContact';
+import { PopupImage } from './components/PopupImage';
 
 export default function App() {
   return (
     <div className="min-h-screen w-full bg-[#f5f1eb] overflow-x-hidden">
+      <PopupImage />
       <Navigation />
       <main className="container mx-auto">
         <section id="home" className="w-full">
