@@ -43,7 +43,7 @@ export function About() {
                   href="https://www.meraevents.com/event/csr-summit-2025"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-3 bg-[#BBD921] text-black rounded-full font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                  className="px-8 py-3 bg-[#BBD921] text-black rounded-full text-center font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
                 >
                   Register
                 </a>
