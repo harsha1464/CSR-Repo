@@ -17,54 +17,53 @@ import { FloatingContact } from './components/FloatingContact';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#f5f1eb]">
+    <div className="min-h-screen w-full bg-[#f5f1eb] overflow-x-hidden">
       <Navigation />
-      <main>
-        <section id="home">
+      <main className="container mx-auto">
+        <section id="home" className="w-full">
           <Slideshow />
         </section>
-        <section id="about">
+        <section id="about" className="w-full">
           <About />
         </section>
-        <section id="registrations">
+        <section id="registrations" className="w-full">
           <Registrations />
         </section>
-        <br/>
-        <br/>
-        <section id="awards">
+        <br />
+        <br />
+        <section id="awards" className="w-full">
           <Awards />
         </section>
-        <br/>
-        <section id="speakers">
+        <br />
+        <section id="speakers" className="w-full">
           <Speakers />
         </section>
-        <br/>
-        <section id="team">
+        <br />
+        <section id="team" className="w-full">
           <Team />
         </section>
-        <br/>
-        <br/>
-        <section id="sponsorships">
+        <br />
+        <br />
+        <section id="sponsorships" className="w-full">
           <Sponsorships />
         </section>
-        <br/>
-        <br/>
-        <section id="itinerary">
+        <br />
+        <br />
+        <section id="itinerary" className="w-full">
           <Itinerary />
         </section>
-        <br/>
-        <br/>
-        <section id="faqs">
+        <br />
+        <br />
+        <section id="faqs" className="w-full">
           <FAQ />
         </section>
-        <br/>
-        <br/>
-        <section id="contact">
+        <br />
+        <br />
+        <section id="contact" className="w-full">
           <Contact />
         </section>
-        <br/>
-        <br/>
-        {/* <ContactForm /> */}
+        <br />
+        <br />
         <CookieConsent />
         <FloatingContact />
       </main>
@@ -72,3 +71,4 @@ export default function App() {
     </div>
   );
 }
+
