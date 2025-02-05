@@ -2,41 +2,117 @@ import React from 'react';
 
 const timeline = [
   {
-    time: '09:00 AM',
-    event: 'Registration & Breakfast',
-    description: 'Check-in and welcome breakfast for all attendees'
-  },
-  {
-    time: '10:00 AM',
+    time: '10:00 AM - 10:35 AM',
     event: 'Opening Ceremony',
     description: 'Welcome address and keynote speech'
   },
   {
-    time: '11:00 AM',
-    event: 'Panel Discussion',
-    description: 'CSR Initiatives in Modern Business'
+    time: '10:35 AM - 10:45 AM',
+    event: 'Speaker 1',
+    description: 'Presentation by Speaker 1'
   },
   {
-    time: '12:30 PM',
-    event: 'Networking Lunch',
+    time: '10:45 AM - 10:55 AM',
+    event: 'Speaker 2',
+    description: 'Presentation by Speaker 2'
+  },
+  {
+    time: '10:55 AM - 11:05 AM',
+    event: 'Speaker 3',
+    description: 'Presentation by Speaker 3'
+  },
+  {
+    time: '11:05 AM - 11:40 AM',
+    event: 'Awards',
+    description: 'Recognition of outstanding contributions'
+  },
+  {
+    time: '11:40 AM - 11:50 AM',
+    event: 'Speaker 4',
+    description: 'Presentation by Speaker 4'
+  },
+  {
+    time: '11:50 AM - 12:00 PM',
+    event: 'Speaker 5',
+    description: 'Presentation by Speaker 5'
+  },
+  {
+    time: '12:10 PM - 12:20 PM',
+    event: 'Speaker 6',
+    description: 'Presentation by Speaker 6'
+  },
+  {
+    time: '12:20 PM - 01:00 PM',
+    event: 'Awards',
+    description: 'Recognition of outstanding achievements'
+  },
+  {
+    time: '01:00 PM - 02:00 PM',
+    event: 'Lunch',
     description: 'Lunch break and networking opportunity'
   },
   {
-    time: '02:00 PM',
-    event: 'Breakout Sessions',
-    description: 'Specialized workshops and discussions'
+    time: '02:00 PM - 02:20 PM',
+    event: 'Performance',
+    description: 'Performance by guest artists'
   },
   {
-    time: '04:00 PM',
-    event: 'Awards Ceremony',
-    description: 'Recognition of outstanding CSR contributions'
+    time: '02:20 PM - 02:30 PM',
+    event: 'Speaker 7',
+    description: 'Presentation by Speaker 7'
   },
   {
-    time: '05:30 PM',
-    event: 'Closing Ceremony',
-    description: 'Concluding remarks and future outlook'
+    time: '02:30 PM - 02:40 PM',
+    event: 'Speaker 8',
+    description: 'Presentation by Speaker 8'
+  },
+  {
+    time: '02:40 PM - 02:50 PM',
+    event: 'Speaker 9',
+    description: 'Presentation by Speaker 9'
+  },
+  {
+    time: '02:50 PM - 04:00 PM',
+    event: 'Awards',
+    description: 'Recognition of outstanding contributions'
+  },
+  {
+    time: '04:00 PM - 04:30 PM',
+    event: 'Hi Tea Break',
+    description: 'Tea break and informal discussions'
+  },
+  {
+    time: '04:30 PM - 04:40 PM',
+    event: 'Speaker 10',
+    description: 'Presentation by Speaker 10'
+  },
+  {
+    time: '04:40 PM - 04:50 PM',
+    event: 'Speaker 11',
+    description: 'Presentation by Speaker 11'
+  },
+  {
+    time: '04:50 PM - 05:00 PM',
+    event: 'Speaker 12',
+    description: 'Presentation by Speaker 12'
+  },
+  {
+    time: '05:00 PM - 05:20 PM',
+    event: 'Performance',
+    description: 'Performance by guest artists'
+  },
+  {
+    time: '05:20 PM - 06:30 PM',
+    event: 'Awards',
+    description: 'Recognition of outstanding achievements'
+  },
+  {
+    time: '06:30 PM - 06:50 PM',
+    event: 'Team Bow and Valedictory',
+    description: 'Concluding remarks and farewell'
   }
 ];
+
 
 export function Itinerary() {
   return (
