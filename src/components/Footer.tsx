@@ -10,28 +10,28 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="hover:text-gray-300">Home</a></li>
-              <li><a href="/registrations" className="hover:text-gray-300">Registrations</a></li>
-              <li><a href="/awards" className="hover:text-gray-300">Awards</a></li>
-              <li><a href="/speakers" className="hover:text-gray-300">Speakers</a></li>
+              <li><a href="#registrations" className="hover:text-gray-300">Registrations</a></li>
+              <li><a href="#awards" className="hover:text-gray-300">Awards</a></li>
+              <li><a href="#speakers" className="hover:text-gray-300">Speakers</a></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="/sponsorships.tsx" className="hover:text-gray-300">Sponsorships</a></li>
-              <li><a href="/faqs" className="hover:text-gray-300">FAQs</a></li>
-              <li><a href="/press" className="hover:text-gray-300">Press</a></li>
-              <li><a href="/contact" className="hover:text-gray-300">Contact</a></li>
+              <li><a href="#sponsorships" className="hover:text-gray-300">Sponsorships</a></li>
+              <li><a href="#faqs" className="hover:text-gray-300">FAQs</a></li>
+              {/* <li><a href="/press" className="hover:text-gray-300">Press</a></li> */}
+              <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
               <li><a href="/privacy" className="hover:text-gray-300">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-gray-300">Terms of Service</a></li>
               <li><a href="/cookies" className="hover:text-gray-300">Cookie Policy</a></li>
             </ul>
-          </div>
+          </div> */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">

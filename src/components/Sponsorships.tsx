@@ -5,6 +5,7 @@ import GoldSponsor2 from '../Images/Mana-Panta.jpg';
 import GoldSponsor3 from '../Images/Dr. ved Logo... ( black ).pdf.png';
 import GoldSponsor4 from '../Images/ATMt.jpg';
 import GoldSponsor5 from '../Images/MeraEvents.jpg';
+import GoldSponsor6 from '../Images/anurag-logo-2.png.webp';
 
 
 const sponsors = {
@@ -14,6 +15,7 @@ const sponsors = {
     { name: 'Gold Sponsor 3', logo: GoldSponsor3 },
     { name: 'Gold Sponsor 4', logo: GoldSponsor4 },
     { name: 'Gold Sponsor 5', logo: GoldSponsor5 },
+    { name: 'Gold Sponsor 6', logo: GoldSponsor6 },
   ],
 };
 

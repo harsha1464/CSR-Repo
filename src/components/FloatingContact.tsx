@@ -23,14 +23,14 @@ export function FloatingContact() {
       {/* Phone Button */}
       <div className="relative group">
         <a
-          href="tel:+918328382486"
+          href="tel:+917013888282"
           className="bg-[#BBD921] w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 transform hover:bg-[#BBD921] hover:scale-110"
         >
           <Phone className="w-6 h-6 text-black" />
         </a>
         {/* Hover Text */}
         <span className="absolute left-[-375%] top-1/2 -translate-y-1/2 bg-black text-white text-sm py-2 px-3 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-          Call Us: +91 8328382486
+          Call Us: +91 7013888282
         </span>
       </div>
     </div>
