@@ -33,6 +33,11 @@ export default function App() {
         </section>
         <br />
         <br />
+        <section id="contact" className="w-full">
+          <Contact />
+        </section>
+        <br />
+        <br />
         <section id="awards" className="w-full">
           <Awards />
         </section>

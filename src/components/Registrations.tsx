@@ -2,7 +2,6 @@ import React from 'react';
 import { ContactInfo } from './Contact';
 
 const TIER_DATES = {
-  earlyBird: new Date('2025-01-31T23:59:59'),
   regular: new Date('2025-03-10T23:59:59'),
 };
 
@@ -37,7 +36,7 @@ function RegistrationTier({
           rel="noopener noreferrer"
           className="block w-full text-center bg-[#BBD921] text-black px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-colors"
         >
-          Register Now
+          Reserve Your Spot
         </a>
       )}
     </div>
@@ -63,8 +62,7 @@ function BulkRegistration() {
 
 export function Registrations() {
   const now = new Date();
-  const currentTier = now <= TIER_DATES.earlyBird ? 'early' :
-                     now <= TIER_DATES.regular ? 'regular' : 'late';
+  const currentTier = now <= TIER_DATES.regular ? 'regular' : 'late';
 
   return (
     <div className="content-section">
@@ -72,13 +70,6 @@ export function Registrations() {
         <h1 className="text-4xl font-bold mb-12 section-title text-gradient text-center">Registration</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <RegistrationTier
-            title="Early Bird"
-            price="₹6,000/-"
-            date="January 31, 2025"
-            isActive={currentTier === 'early'}
-            isExpired={now > TIER_DATES.earlyBird}
-          />
           <RegistrationTier
             title="Regular"
             price="₹10,000/-"
@@ -93,8 +84,6 @@ export function Registrations() {
             isActive={currentTier === 'cm'}
             isExpired={now > TIER_DATES.regular}
           />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <BulkRegistration />
         </div>
 

@@ -1,6 +1,6 @@
 // components/PopupImage.jsx
 import React, { useState, useEffect } from 'react';
-import GoldSponsor6 from '../Images/Screenshot 2025-02-05 231338.png';
+import GoldSponsor6 from '../Images/WhatsApp Image 2025-02-05 at 21.10.45_b32c30c5.jpg';
 
 export function PopupImage() {
   const [isOpen, setIsOpen] = useState(true);
@@ -31,7 +31,7 @@ export function PopupImage() {
         <img
           src={GoldSponsor6} // Use the imported image variable
           alt="Popup"
-          className="max-w-full max-h-full"
+          className="w-80 h-90 max-w-full max-h-full"
         />
       </div>
     </div>

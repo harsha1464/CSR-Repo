@@ -46,9 +46,29 @@ const teamMembers = [
   }
 ];
 
+// Dummy images for the new 20 photos
+const additionalPhotos = Array.from({ length: 20 }, (_, index) => ({
+  image: `https://dummyimage.com/150x150/000/fff&text=Photo+${index + 1}`
+}));
+
+const scrollingStyles = {
+  display: 'flex',
+  animation: 'scroll 10s linear infinite',
+  gap: '30px'
+};
+
+const keyframes = `
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+`;
+
+
 export function Team() {
   return (
     <div className="content-section">
+      <style>{keyframes}</style>
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-12 section-title text-gradient text-center">Our Core Team</h1>
         
@@ -92,6 +112,26 @@ export function Team() {
             </div>
           ))}
         </div>
+        <br></br>
+        <br></br>
+        <h3 className="text-3xl font-bold mb-12 section-title text-gradient text-center">Our Other Team Members</h3>
+
+         {/* Scrolling section for additional photos */}
+        <div className="overflow-x-auto py-8">
+          <div style={scrollingStyles}>
+            {additionalPhotos.map((photo, index) => (
+              <img
+                key={index}
+                src={photo.image}
+                alt={`Photo ${index + 1}`}
+                className="w-60 h-50 object-cover "
+              />
+            ))}
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   );
