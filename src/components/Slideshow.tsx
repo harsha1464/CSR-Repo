@@ -4,16 +4,16 @@ const EVENT_DATE = new Date('2025-03-16T00:00:00');
 
 const slides = [
   {
-    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2000&q=80',
-    title: 'Transforming Business Through Sustainable Practices',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2000&q=80',
+    title: 'Transforming Business Through CSR',
   },
   {
-    url: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=2000&q=80',
-    title: 'Building Tomorrow\'s Responsible Leaders',
+    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=2000&q=80',
+    title: 'Building Sustainable Future',
   },
   {
-    url: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80',
-    title: 'Innovating for a Sustainable Future',
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80',
+    title: 'Empowering Communities',
   },
 ];
 
@@ -66,7 +66,7 @@ export function Slideshow() {
   }, []);
 
   return (
-    <div className="relative h-screen">
+    <div className="relative w-full h-screen">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -74,20 +74,24 @@ export function Slideshow() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
+          {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.url})` }}
+            style={{ backgroundImage: `url(${slide.image})` }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-50" />
           </div>
-          <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-            <div className="max-w-4xl">
+
+          {/* Content */}
+          <div className="relative h-full flex flex-col items-center justify-center text-center px-2 sm:px-4">
+            <div className="w-full lg:max-w-4xl">
               <CountdownTimer />
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-8 animate-fade-in">
                 {slide.title}
               </h1>
               
-              <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+              <div className="flex flex-wrap justify-center gap-4">
+                {/* Buttons */}
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
                   target="_blank"
@@ -101,6 +105,22 @@ export function Slideshow() {
                   className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
                 >
                   Connect with Us
+                </a>
+                <a
+                  href="https://www.meraevents.com/event/csr-summit-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                >
+                  Reserve your Spot
+                </a>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                >
+                  Nominate Speaker
                 </a>
               </div>
             </div>
