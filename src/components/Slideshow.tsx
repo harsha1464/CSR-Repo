@@ -93,6 +93,22 @@ export function Slideshow() {
               <div className="flex flex-wrap justify-center gap-4">
                 {/* Buttons */}
                 <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                >
+                  Nominate Speaker
+                </a>
+                <a
+                  href="https://www.meraevents.com/event/csr-summit-2025"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                >
+                  Reserve your Spot
+                </a>
+                <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -106,22 +122,8 @@ export function Slideshow() {
                 >
                   Connect with Us
                 </a>
-                <a
-                  href="https://www.meraevents.com/event/csr-summit-2025"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
-                >
-                  Reserve your Spot
-                </a>
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
-                >
-                  Nominate Speaker
-                </a>
+                
+                
               </div>
             </div>
           </div>
