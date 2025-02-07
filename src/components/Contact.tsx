@@ -25,60 +25,54 @@ export function Contact() {
     <div className="content-section">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 section-title text-gradient">Contact Us</h1>
-        <div className="space-y-8">
-          <div className="enhanced-card p-8 scroll-reveal">
-            <h2 className="text-2xl font-semibold mb-6 flex items-center">
-              <Building2 className="w-6 h-6 mr-2" />
-              Better yet, see us in person!
-            </h2>
-            <div className="space-y-4">
-              <p className="text-lg font-semibold">CSR NOW</p>
-              <ContactInfo size="large" />
-            </div>
+        <div className="enhanced-card p-8 scroll-reveal">
+          <h2 className="text-2xl font-semibold mb-6 flex items-center">
+            <Building2 className="w-6 h-6 mr-2" />
+            Better yet, see us in person!
+          </h2>
+          <div className="space-y-4 mb-8">
+            <p className="text-lg font-semibold">CSR NOW</p>
+            <ContactInfo size="small" />
           </div>
 
-          {/* <ContactDetails /> */}
-
-          <div className="enhanced-card p-8 scroll-reveal">
-            <h2 className="text-2xl font-semibold mb-6 flex items-center">
-              <Clock className="w-6 h-6 mr-2" />
-              Business Hours
-            </h2>
-            <div className="space-y-4">
-              <div>
-                <label htmlFor="day" className="block text-sm font-medium text-gray-700 mb-2">
-                  Select a day to check our hours:
-                </label>
-                <select
-                  id="day"
-                  value={selectedDay}
-                  onChange={handleDaySelect}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black p-2"
-                >
-                  <option value="">Select a day</option>
-                  <option value="mon">Monday</option>
-                  <option value="tue">Tuesday</option>
-                  <option value="wed">Wednesday</option>
-                  <option value="thu">Thursday</option>
-                  <option value="fri">Friday</option>
-                  <option value="sat">Saturday</option>
-                  <option value="sun">Sunday</option>
-                </select>
-              </div>
-
-              {hours && (
-                <div className="bg-gray-50 p-4 rounded-md animate-fade-in">
-                  {hours.isOpen ? (
-                    <p className="text-lg">
-                      Open from <span className="font-semibold">{hours.open}</span> to{' '}
-                      <span className="font-semibold">{hours.close}</span>
-                    </p>
-                  ) : (
-                    <p className="text-lg font-semibold text-gray-600">Closed</p>
-                  )}
-                </div>
-              )}
+          <h2 className="text-2xl font-semibold mb-6 flex items-center">
+            <Clock className="w-6 h-6 mr-2" />
+            Business Hours
+          </h2>
+          <div className="space-y-4">
+            <div>
+              <label htmlFor="day" className="block text-lg font-medium text-gray-700 mb-2">
+                Select a day to check our hours:
+              </label>
+              <select
+                id="day"
+                value={selectedDay}
+                onChange={handleDaySelect}
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black p-2"
+              >
+                <option value="">Select a day</option>
+                <option value="mon">Monday</option>
+                <option value="tue">Tuesday</option>
+                <option value="wed">Wednesday</option>
+                <option value="thu">Thursday</option>
+                <option value="fri">Friday</option>
+                <option value="sat">Saturday</option>
+                <option value="sun">Sunday</option>
+              </select>
             </div>
+
+            {hours && (
+              <div className="bg-gray-50 p-4 rounded-md animate-fade-in">
+                {hours.isOpen ? (
+                  <p className="text-lg">
+                    Open from <span className="font-semibold">{hours.open}</span> to{' '}
+                    <span className="font-semibold">{hours.close}</span>
+                  </p>
+                ) : (
+                  <p className="text-lg font-semibold text-gray-600">Closed</p>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </div>

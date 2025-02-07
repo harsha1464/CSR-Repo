@@ -42,6 +42,7 @@ export function FAQ() {
         
 
         <div className="mt-8 text-center scroll-reveal">
+        <p className="text-lg font-medium mb-4">Have any queries, Mail us @</p>
           <ContactInfo />
         </div>
       </div>
