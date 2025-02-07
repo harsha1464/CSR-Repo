@@ -5,15 +5,10 @@ const teamMembers = [
   { name: 'Vinil Reddy', role: 'Licensee', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/7.jpg?updatedAt=1738682807223', linkedin: 'https://linkedin.com', instagram: 'https://instagram.com' },
   { name: 'Sai Yashwanth Simhadri', role: 'Director', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/6.jpg?updatedAt=1738682807258', linkedin: 'https://linkedin.com', instagram: 'https://instagram.com' },
   { name: 'Jilla Sai Nandhan', role: 'Director-Strategy & Event Operations', image: 'https://ik.imagekit.io/nag93ze07/5.jpg?updatedAt=1738681011962', linkedin: 'https://www.linkedin.com/in/sainandhan-jilla-21a816224/', instagram: 'https://instagram.com' },
-  { name: 'Raaga Samanvita', role: 'Sponsorship Relations ', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/9.jpg?updatedAt=1738682807331', linkedin: 'https://www.linkedin.com/in/burra-raaga-samanvita/', instagram: 'https://instagram.com' },
+  { name: 'Raaga Samanvita', role: 'Sponsorship Relations', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/9.jpg?updatedAt=1738682807331', linkedin: 'https://www.linkedin.com/in/burra-raaga-samanvita/', instagram: 'https://instagram.com' },
   { name: 'Pranav Kothapalli', role: 'Branding and Communications Manager', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/10.jpg?updatedAt=1738682807228', linkedin: 'https://www.linkedin.com/in/pranavkothapalli/', instagram: 'https://instagram.com' },
   { name: 'Aishwarya Alechalla', role: 'Content Lead & Program Manager', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/8.jpg?updatedAt=1738682807326', linkedin: 'https://www.linkedin.com/in/aishwaryaalechalla/', instagram: 'https://instagram.com' }
 ];
-
-const additionalPhotos = Array.from({ length: 24 }, (_, index) => ({
-  image: `https://dummyimage.com/150x150/000/fff&text=Photo+${index + 1}`,
-  name: `Member ${index + 1}`
-}));
 
 export function Team() {
   return (
@@ -40,16 +35,6 @@ export function Team() {
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
               </div>
-            </div>
-          ))}
-        </div>
-        <br /><br />
-        <h3 className="text-3xl font-bold mb-12 section-title text-gradient text-center">Our Other Team Members</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          {additionalPhotos.map((photo, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <img src={photo.image} alt={photo.name} className="w-28 h-28 object-cover rounded-lg" />
-              <p className="mt-2 text-sm text-gray-700">{photo.name}</p>
             </div>
           ))}
         </div>

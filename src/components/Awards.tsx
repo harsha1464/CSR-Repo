@@ -18,20 +18,21 @@ export function Awards() {
               for their work.
             </p>
           </div>
-        </div>
-        
-        <div className="text-center scroll-reveal space-y-8">
-            <div className="inline-flex justify-center mb-12 mt-8 ml-8 mr-8">
-            <ContactInfo email="awards@csrnow.in" />
+          <div className="text-center scroll-reveal mt-8 space-y-8">
+            <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:justify-center">
+              <div className="flex-shrink-0">
+                <ContactInfo email="awards@csrnow.in" />
+              </div>
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button inline-block bg-black text-white px-3 py-4 sm:px-5 sm:py-4 rounded-md font-semibold text-md sm:text-lg border-2 border-black w-64 max-w-xs sm:max-w-none"
+              >
+                Register for Awards
+              </a>
             </div>
-          <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-block bg-black text-white px-12 py-4 rounded-md font-semibold text-lg mt-4 mr-4"
-          >
-            Register for Awards
-          </a>
+          </div>
         </div>
       </div>
     </div>

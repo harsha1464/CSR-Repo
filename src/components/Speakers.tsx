@@ -22,21 +22,20 @@ export function Speakers() {
                 <li className="animated-list-item">All the required documents are to be enclosed along with the application.</li>
               </ol>
             </div>
+            <div className="text-center scroll-reveal mt-8 space-y-8">
+              <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:justify-center">
+                <ContactInfo email="speakercuration@csrnow.in"/>
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button inline-block bg-black text-white px-3 py-4 sm:px-5 sm:py-4 rounded-md font-semibold text-md sm:text-lg border-2 border-black w-64 max-w-xs sm:max-w-none"
+                >
+                  Nominate Speaker
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div className="text-center scroll-reveal">
-          <div className="mb-8 inline-flex justify-center mb-12 mt-8 ml-8 mr-8">
-            <ContactInfo email="speakercuration@csrnow.in"/>
-          </div>
-          <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfICHIZJ1dUG7Wz13lbmFk9DX-Z1JQOJCAOQ1Jx1GAmpPqrxQ/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-button inline-block bg-black text-white px-12 py-4 rounded-md font-semibold text-lg"
-          >
-            Nominate Speaker
-          </a>
         </div>
       </div>
     </div>

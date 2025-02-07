@@ -101,7 +101,7 @@ export function ContactInfo({ email = 'Connect@csrnow.in', size = 'default' }: {
 
   const isLarge = size === 'large';
   const containerClasses = `
-    inline-flex items-center bg-white rounded-full shadow-md px-6 py-3
+    inline-flex items-center bg-white rounded-full shadow-md px-6 py-3 border border-black
     hover:shadow-lg transition-all duration-300 group cursor-pointer
     ${isLarge ? 'scale-110' : ''}
   `;
