@@ -39,15 +39,7 @@ export function FAQ() {
           ))}
         </div>
 
-        <div className="enhanced-card p-8 scroll-reveal">
-          <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-          <p className="text-lg">
-            At CSRNOW, our mission is to empower business professionals with the knowledge and 
-            skills they need to succeed in the ever-changing world of commerce. Our conference 
-            brings together industry experts and thought leaders to share insights, strategies, 
-            and best practices.
-          </p>
-        </div>
+        
 
         <div className="mt-8 text-center scroll-reveal">
           <ContactInfo />
