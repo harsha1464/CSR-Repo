@@ -2,12 +2,13 @@ import React from 'react';
 import { Linkedin, Instagram } from 'lucide-react';
 
 const teamMembers = [
-  { name: 'Vinil Reddy', role: 'Licensee', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/7.jpg?updatedAt=1738682807223', linkedin: 'https://linkedin.com', instagram: 'https://instagram.com' },
+  { name: 'Vinil Reddy', role: 'Licensee', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/7.jpg?updatedAt=1738682807223', linkedin: 'https://www.linkedin.com/in/vinil-reddy-adudodla-37bb67329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', instagram: 'https://www.instagram.com/csrsouthnow/' },
   { name: 'Sai Yashwanth Simhadri', role: 'Director', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/6.jpg?updatedAt=1738682807258', linkedin: 'https://linkedin.com', instagram: 'https://instagram.com' },
   { name: 'Jilla Sai Nandhan', role: 'Director-Strategy & Event Operations', image: 'https://ik.imagekit.io/nag93ze07/5.jpg?updatedAt=1738681011962', linkedin: 'https://www.linkedin.com/in/sainandhan-jilla-21a816224/', instagram: 'https://instagram.com' },
-  { name: 'Raaga Samanvita', role: 'Sponsorship Relations', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/9.jpg?updatedAt=1738682807331', linkedin: 'https://www.linkedin.com/in/burra-raaga-samanvita/', instagram: 'https://instagram.com' },
-  { name: 'Pranav Kothapalli', role: 'Branding and Communications Manager', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/10.jpg?updatedAt=1738682807228', linkedin: 'https://www.linkedin.com/in/pranavkothapalli/', instagram: 'https://instagram.com' },
-  { name: 'Aishwarya Alechalla', role: 'Content Lead & Program Manager', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/8.jpg?updatedAt=1738682807326', linkedin: 'https://www.linkedin.com/in/aishwaryaalechalla/', instagram: 'https://instagram.com' }
+  { name: 'Burra Raaga Samanvita', role: 'Sponsorship Relations Lead', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/9.jpg?updatedAt=1738682807331', linkedin: 'https://www.linkedin.com/in/burra-raaga-samanvita/', instagram: 'https://instagram.com' },
+  { name: 'Aishwarya Alechalla', role: 'Program Manager & Content Lead', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/8.jpg?updatedAt=1738682807326', linkedin: 'https://www.linkedin.com/in/aishwaryaalechalla/', instagram: 'https://instagram.com' },
+  { name: 'Pranav Kothapalli', role: 'Design Lead', image: 'https://ik.imagekit.io/nag93ze07/Formal%20Photos%20mine/10.jpg?updatedAt=1738682807228', linkedin: 'https://www.linkedin.com/in/pranavkothapalli/', instagram: 'https://instagram.com' }
+  
 ];
 
 export function Team() {

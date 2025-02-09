@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { ContactInfo } from './Contact';
-import GoldSponsor1 from '../Images/Dr Image.jpg';
-import GoldSponsor2 from '../Images/Mana-Panta.jpg';
+import GoldSponsor2 from '../Images/Dr Image.jpg';
+import GoldSponsor1 from '../Images/Mana-Panta.jpg';
 import GoldSponsor3 from '../Images/Dr. ved Logo... ( black ).pdf.png';
-import GoldSponsor4 from '../Images/ATMt.jpg';
-import GoldSponsor5 from '../Images/MeraEvents.jpg';
-import GoldSponsor6 from '../Images/anurag-logo-2.png.webp';
+import GoldSponsor4 from '../Images/VinMedia.jpg';
+import GoldSponsor5 from '../Images/Photo Mama.jpg';
+import GoldSponsor6 from '../Images/Ganadaksha.jpg';
+import GoldSponsor7 from '../Images/Generous Hearts.jpg';
+import GoldSponsor8 from '../Images/Sangha Mitra Society.jpg';
+import GoldSponsor9 from '../Images/Varadhi.jpg';
 import { Mail, Check, Copy } from 'lucide-react';
 
 const sponsors = {
@@ -16,6 +19,10 @@ const sponsors = {
     { name: 'Gold Sponsor 4', logo: GoldSponsor4 },
     { name: 'Gold Sponsor 5', logo: GoldSponsor5 },
     { name: 'Gold Sponsor 6', logo: GoldSponsor6 },
+    { name: 'Gold Sponsor 7', logo: GoldSponsor7 },
+    { name: 'Gold Sponsor 8', logo: GoldSponsor8 },
+    { name: 'Gold Sponsor 9', logo: GoldSponsor9 }
+
   ],
 };
 
@@ -89,7 +96,7 @@ export function Sponsorships() {
         </div>
 
         <div className="text-center mt-8">
-          <ContactInfo />
+          {/* <ContactInfo /> */}
         </div>
       </div>
     </div>

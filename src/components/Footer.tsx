@@ -35,16 +35,16 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-gray-300">
+              <a href="https://www.facebook.com/people/South-Indias-CSR-Summit/61571625493064/" className="hover:text-gray-300">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300">
+              <a href="https://x.com/csrsummit2025?mx=2" className="hover:text-gray-300">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300">
+              <a href="https://www.linkedin.com/company/csrnow/" className="hover:text-gray-300">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-gray-300">
+              <a href="https://www.instagram.com/csrsouthnow/" className="hover:text-gray-300">
                 <Instagram className="w-6 h-6" />
               </a>
             </div>

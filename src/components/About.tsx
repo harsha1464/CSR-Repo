@@ -14,20 +14,14 @@ export function About() {
               Responsibility initiatives across industries. We bring together leaders, innovators, 
               and change-makers to create meaningful impact in communities worldwide.
             </p>
-            {/* <p className="text-lg mb-6">
-              Our mission is to facilitate collaboration between corporations and communities, 
-              fostering sustainable development and positive social change through effective CSR 
-              programs and initiatives.
-            </p> */}
-            <div className="enhanced-card p-8 scroll-reveal">
-          <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-          <p className="text-lg">
-            At CSRNOW, our mission is to empower business professionals with the knowledge and 
-            skills they need to succeed in the ever-changing world of commerce. Our conference 
-            brings together industry experts and thought leaders to share insights, strategies, 
-            and best practices.
-          </p>
-        </div>
+            <p className="text-lg mb-6">
+              <strong>What is CSR Summit?</strong><br />
+              The CSRNOW conference aims to create a networking opportunity for both corporates and companies and not-for-profit organisations to discuss recent insights on socially responsible practices in the not-for-profit sector.
+            </p>
+            <p className="text-lg mb-6">
+              <strong>Vision and Mission ?</strong><br />
+              We aim to bridge the gap between the not-for-profit organisations and CSR companies come united. With the CSRNOW conference, we bring them closer on a single platform so that networking happens here in the open session and conferences that are organized by CSRNOW.
+            </p>
             <div className="mt-12 text-center">
               <ContactInfo />
             </div>
