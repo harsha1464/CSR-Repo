@@ -15,6 +15,7 @@ import { CookieConsent } from './components/CookieConsent';
 import { Footer } from './components/Footer';
 import { FloatingContact } from './components/FloatingContact';
 import { PopupImage } from './components/PopupImage';
+import { Demographics } from './components/Demographics';
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
       <main className="container mx-auto">
         <section id="home" className="w-full">
           <Slideshow />
+        </section>
+        <section id="demographics" className="w-full">
+          <Demographics />
         </section>
         <section id="about" className="w-full">
           <About />

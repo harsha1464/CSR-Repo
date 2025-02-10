@@ -123,7 +123,7 @@ export function Registrations() {
 export function ContactDetails() {
   const contactList = [
     { title: 'General Enquiry', name: 'Vinil Reddy', email: 'vinil@csrnow.in', phone: '89776 66266' },
-    { title: 'Bulk Tickets Booking', name: 'Saiyashwanth Simhadri', email: 'saiyashwanth@csrnow.in', phone: '93986 24615' },
+    
     { title: 'Stalls Enquiry', name: 'Sainandhan Jilla', email: 'sainandhan@csrnow.in', phone: '70138 88282' },
     { title: 'Sponsorship Enquiry', name: 'Burra Raaga Samanvita', email: 'raaga@csrnow.in', phone: '86885 83069' },
     { title: 'Awards Enquiry', name: 'Lahari Ramireddy', email: 'awards@csrnow.in', phone: '95023 43555' },
