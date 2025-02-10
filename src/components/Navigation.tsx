@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import Logo from '../Images/CSR_Logo-removebg-preview.png';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -44,7 +45,11 @@ export function Navigation() {
               onClick={(e) => handleNavClick(e, '#home')}
               className="text-xl font-bold hover:text-gray-300 transition-colors"
             >
-              CSRNOW
+              <img 
+                src={Logo} 
+                alt="Logo" 
+                className="h-12 w-auto bg-white p-1 rounded-md shadow-md" // Adjust size as needed
+              />
             </a>
           </div>
 
