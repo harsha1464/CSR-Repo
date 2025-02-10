@@ -32,7 +32,7 @@ export function Contact() {
           </h2>
           <div className="space-y-4 mb-8">
             <p className="text-lg font-semibold">CSR NOW</p>
-            <ContactInfo size="small" />
+            <ContactInfo size="default" />
           </div>
 
           <h2 className="text-2xl font-semibold mb-6 flex items-center">

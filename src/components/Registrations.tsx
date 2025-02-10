@@ -83,7 +83,7 @@ export function Registrations() {
             title="Change Maker"
             price="₹25,000/-"
             date="March 10, 2025"
-            isActive={currentTier === 'cm'}
+            isActive={currentTier === 'regular'}
             isExpired={now > TIER_DATES.regular}
           />
           <BulkRegistration />
