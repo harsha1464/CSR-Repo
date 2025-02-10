@@ -6,7 +6,7 @@ const demographics = [
   { value: 50, title: 'EXHIBITORS' },
   { value: 12, title: 'SPEAKERS' },
   { value: 50, title: 'AWARDEES' },
-  { value: 1005, title: 'NON PROFITS' },
+  { value: 1005, title: 'NOT FOR PROFITS' },
   { value: 121300, title: 'SITE VISITORS' },
   
 ];
