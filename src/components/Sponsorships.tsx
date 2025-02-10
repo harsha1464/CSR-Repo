@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { ContactInfo } from './Contact';
-import GoldSponsor2 from '../Images/Dr Image.jpg';
-import GoldSponsor1 from '../Images/Mana-Panta.jpg';
-import GoldSponsor3 from '../Images/Dr. ved Logo... ( black ).pdf.png';
-import GoldSponsor4 from '../Images/VinMedia.jpg';
-import GoldSponsor5 from '../Images/Photo Mama.jpg';
-import GoldSponsor6 from '../Images/Ganadaksha.jpg';
-import GoldSponsor7 from '../Images/Generous Hearts.jpg';
-import GoldSponsor8 from '../Images/Sangha Mitra Society.jpg';
-import GoldSponsor9 from '../Images/Varadhi.jpg';
+import GoldSponsor9 from '../Images/Wellness-ion-new.png';
+import GoldSponsor1 from '../Images/Mana-Panta-New.png';
+import GoldSponsor8 from '../Images/Dr. ved Logo... ( black ).pdf.png';
+import GoldSponsor2 from '../Images/VinMedia.jpg';
+import GoldSponsor3 from '../Images/Photo Mama.jpg';
+import GoldSponsor4 from '../Images/Ganadaksha.jpg';
+import GoldSponsor5 from '../Images/Generous-Hearts-New.png';
+import GoldSponsor6 from '../Images/Sangha Mitra Society.jpg';
+import GoldSponsor7 from '../Images/Varadhi-New.png';
+import GoldSponsor10 from '../Images/Edit-Point-India.png';
 import { Mail, Check, Copy } from 'lucide-react';
 
 const sponsors = {
@@ -21,7 +22,8 @@ const sponsors = {
     { name: 'Gold Sponsor 6', logo: GoldSponsor6 },
     { name: 'Gold Sponsor 7', logo: GoldSponsor7 },
     { name: 'Gold Sponsor 8', logo: GoldSponsor8 },
-    { name: 'Gold Sponsor 9', logo: GoldSponsor9 }
+    { name: 'Gold Sponsor 9', logo: GoldSponsor9 },
+    { name: 'Gold Sponsor 10', logo: GoldSponsor10 }
 
   ],
 };
