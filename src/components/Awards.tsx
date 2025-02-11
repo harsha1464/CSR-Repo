@@ -24,7 +24,7 @@ export function Awards() {
                 <ContactInfo email="awards@csrnow.in" />
               </div>
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe0e38XTHwK81WIniC0mLRNQfXhyFT2jhaOGmIljluNFhpChw/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf8iiYUDTt80h6kcI9SGbm69k7ouH5jtSUxKBVYSEM-NETZAQ/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cta-button inline-block bg-black text-white px-3 py-4 sm:px-5 sm:py-4 rounded-md font-semibold text-md sm:text-lg border-2 border-black w-64 max-w-xs sm:max-w-none"
