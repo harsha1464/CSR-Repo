@@ -23,7 +23,7 @@ export function About() {
               We aim to bridge the gap between the not-for-profit organisations and CSR companies come united. With the CSRNOW conference, we bring them closer on a single platform so that networking happens here in the open session and conferences that are organized by CSRNOW.
             </p>
             <div className="mt-12 text-center">
-              <ContactInfo />
+              {/* <ContactInfo /> */}
             </div>
           </div>
         </div>
