@@ -5,7 +5,7 @@ export function About() {
   return (
     <div className="bg-[#f5f1eb]">
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-0">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg">
             <h2 className="text-4xl font-bold mb-8 text-center">About CSR NOW</h2>

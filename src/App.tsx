@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 import { FloatingContact } from './components/FloatingContact';
 import { PopupImage } from './components/PopupImage';
 import { Demographics } from './components/Demographics';
+import Testimonials from './components/Testimonials';
 
 export default function App() {
   return (
@@ -32,6 +33,9 @@ export default function App() {
         <section id="about" className="w-full">
           <About />
         </section>
+        <section id="testimonials" className="w-full">
+          <Testimonials />
+        </section> 
         <section id="registrations" className="w-full">
           <Registrations />
         </section>
