@@ -112,7 +112,7 @@ export function Slideshow() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSf8iiYUDTt80h6kcI9SGbm69k7ouH5jtSUxKBVYSEM-NETZAQ/viewform"
                 target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#BBD921] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105"
+                  className="inline-block bg-[#808080] text-black px-8 py-3 rounded-md font-semibold hover:bg-opacity-50 transition-all transform hover:scale-105"
                 >
                   Register for Awards
                 </a>
