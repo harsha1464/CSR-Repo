@@ -12,6 +12,17 @@ import GoldSponsor7 from '../Images/Varadhi-New.png';
 import GoldSponsor10 from '../Images/Edit-Point-India.png';
 import GoldSponsor11 from '../Images/Sweetone.png';
 import GoldSponsor12 from '../Images/Vasudha.png';
+import GoldSponsor13 from '../Images/Sampradaayam.png';
+import GoldSponsor14 from '../Images/Telangana development forum.png';
+import GoldSponsor15 from '../Images/V&v foods.png';
+import GoldSponsor16 from '../Images/Subishi.png';
+import GoldSponsor17 from '../Images/Bachpan bacho.png';
+import GoldSponsor18 from '../Images/QI media.png';
+import GoldSponsor19 from '../Images/Anaganaga.png';
+import GoldSponsor20 from '../Images/Trulio.png';
+import GoldSponsor21 from '../Images/Srimandiram.png';
+import GoldSponsor22 from '../Images/Jeeni.png';
+
 import { Mail, Check, Copy } from 'lucide-react';
 
 const sponsors = {
@@ -27,7 +38,17 @@ const sponsors = {
     { name: 'Gold Sponsor 9', logo: GoldSponsor9 },
     { name: 'Gold Sponsor 10', logo: GoldSponsor10 },
     { name: 'Gold Sponsor 11', logo: GoldSponsor11 },
-    { name: 'Gold Sponsor 12', logo: GoldSponsor12 }
+    { name: 'Gold Sponsor 12', logo: GoldSponsor12 },
+    { name: 'Gold Sponsor 13', logo: GoldSponsor13 },
+    { name: 'Gold Sponsor 14', logo: GoldSponsor14 },
+    { name: 'Gold Sponsor 15', logo: GoldSponsor15 },
+    { name: 'Gold Sponsor 16', logo: GoldSponsor16 },
+    { name: 'Gold Sponsor 17', logo: GoldSponsor17 },
+    { name: 'Gold Sponsor 18', logo: GoldSponsor18 },
+    { name: 'Gold Sponsor 19', logo: GoldSponsor19 },
+    { name: 'Gold Sponsor 20', logo: GoldSponsor20 },
+    { name: 'Gold Sponsor 21', logo: GoldSponsor21 },
+    { name: 'Gold Sponsor 22', logo: GoldSponsor22 },
 
   ],
 };
