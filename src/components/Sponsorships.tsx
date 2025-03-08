@@ -22,6 +22,7 @@ import GoldSponsor19 from '../Images/Anaganaga.png';
 import GoldSponsor20 from '../Images/Trulio.png';
 import GoldSponsor21 from '../Images/Srimandiram.png';
 import GoldSponsor22 from '../Images/Jeeni.png';
+import GoldSponsor23 from '../Images/dont waste food.jpg';
 
 import { Mail, Check, Copy } from 'lucide-react';
 
@@ -49,6 +50,7 @@ const sponsors = {
     { name: 'Gold Sponsor 20', logo: GoldSponsor20 },
     { name: 'Gold Sponsor 21', logo: GoldSponsor21 },
     { name: 'Gold Sponsor 22', logo: GoldSponsor22 },
+    { name: 'Gold Sponsor 23', logo: GoldSponsor23 },
 
   ],
 };
