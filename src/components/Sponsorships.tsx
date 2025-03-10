@@ -1,132 +1,128 @@
-import React, { useState } from 'react';
-import { ContactInfo } from './Contact';
-import GoldSponsor9 from '../Images/Wellness-ion-new.png';
-import GoldSponsor1 from '../Images/Mana-Panta-New.png';
-import GoldSponsor8 from '../Images/Dr. ved Logo... ( black ).pdf.png';
-import GoldSponsor2 from '../Images/VinMedia.jpg';
-import GoldSponsor3 from '../Images/Photo Mama.jpg';
-import GoldSponsor4 from '../Images/Ganadaksha.jpg';
-import GoldSponsor5 from '../Images/Generous-Hearts-New.png';
-import GoldSponsor6 from '../Images/Sangha Mitra Society.jpg';
-import GoldSponsor7 from '../Images/Varadhi-New.png';
-import GoldSponsor10 from '../Images/Edit-Point-India.png';
-import GoldSponsor11 from '../Images/Sweetone.png';
-import GoldSponsor12 from '../Images/Vasudha.png';
-import GoldSponsor13 from '../Images/Sampradaayam.png';
-import GoldSponsor14 from '../Images/Telangana development forum.png';
-import GoldSponsor15 from '../Images/V&v foods.png';
-import GoldSponsor16 from '../Images/Subishi.png';
-import GoldSponsor17 from '../Images/Bachpan bacho.png';
-import GoldSponsor18 from '../Images/QI media.png';
-import GoldSponsor19 from '../Images/Anaganaga.png';
-import GoldSponsor20 from '../Images/Trulio.png';
-import GoldSponsor21 from '../Images/Srimandiram.png';
-import GoldSponsor22 from '../Images/Jeeni.png';
-import GoldSponsor23 from '../Images/dont waste food.jpg';
+import React from 'react';
 
-import { Mail, Check, Copy } from 'lucide-react';
+// --- Import Sponsor Images ---
+// Gold Partners
+import ManaPanta from '../Images/Mana-Panta-New.png'; // Mana Panta
+import VinduIT from '../Images/Vindu it sols.png'; // Dummy image for Vindu IT
 
+// Silver Partners
+import VvFoods from '../Images/V&v foods.png'; // V&V
+import VinMedia from '../Images/VinMedia.jpg'; // Vinmedia
+import Sampradayam from '../Images/Sampradaayam.png'; // Sampradayam
+
+// Bronze Partners
+import Subishi from '../Images/Subishi.png'; // Subishi
+import DummyTDF from '../Images/Telangana development forum.png'; // Dummy image for TDF (repeated twice)
+import Sanghamitra from '../Images/Sangha Mitra Society.jpg'; // Sanghamitra
+
+// Community Partners
+import BachpanBachao from '../Images/Bachpan bacho.png'; // Bachpan Bachao
+
+// Gifting Partners
+import DrWellness from '../Images/Wellness-ion-new.png'; // Dr. Wellness
+import DrVed from '../Images/Dr. ved Logo... ( black ).pdf.png'; // Dr. Ved
+import Sweetone from '../Images/Sweetone.png'; // Sweetone
+import VasudhaFoods from '../Images/Vasudha.png'; // Vasudha Foods
+import Gene from '../Images/Jeeni.png'; // Vasudha Foods
+import Trulio from '../Images/Trulio.png'; // Trulio
+import Srimandiram from '../Images/Srimandiram.png'; // Srimandiram Exports
+import Anaganaga from '../Images/Anaganaga.png'; // Anaganaga
+
+// --- Define Sponsor Data ---
 const sponsors = {
   gold: [
-    { name: 'Gold Sponsor 1', logo: GoldSponsor1 },
-    { name: 'Gold Sponsor 2', logo: GoldSponsor2 },
-    { name: 'Gold Sponsor 3', logo: GoldSponsor3 },
-    { name: 'Gold Sponsor 4', logo: GoldSponsor4 },
-    { name: 'Gold Sponsor 5', logo: GoldSponsor5 },
-    { name: 'Gold Sponsor 6', logo: GoldSponsor6 },
-    { name: 'Gold Sponsor 7', logo: GoldSponsor7 },
-    { name: 'Gold Sponsor 8', logo: GoldSponsor8 },
-    { name: 'Gold Sponsor 9', logo: GoldSponsor9 },
-    { name: 'Gold Sponsor 10', logo: GoldSponsor10 },
-    { name: 'Gold Sponsor 11', logo: GoldSponsor11 },
-    { name: 'Gold Sponsor 12', logo: GoldSponsor12 },
-    { name: 'Gold Sponsor 13', logo: GoldSponsor13 },
-    { name: 'Gold Sponsor 14', logo: GoldSponsor14 },
-    { name: 'Gold Sponsor 15', logo: GoldSponsor15 },
-    { name: 'Gold Sponsor 16', logo: GoldSponsor16 },
-    { name: 'Gold Sponsor 17', logo: GoldSponsor17 },
-    { name: 'Gold Sponsor 18', logo: GoldSponsor18 },
-    { name: 'Gold Sponsor 19', logo: GoldSponsor19 },
-    { name: 'Gold Sponsor 20', logo: GoldSponsor20 },
-    { name: 'Gold Sponsor 21', logo: GoldSponsor21 },
-    { name: 'Gold Sponsor 22', logo: GoldSponsor22 },
-    { name: 'Gold Sponsor 23', logo: GoldSponsor23 },
-
+    { name: 'Mana Panta', logo: ManaPanta },
+    { name: 'Vindu IT', logo: VinduIT },
+  ],
+  silver: [
+    { name: 'V&V', logo: VvFoods },
+    { name: 'Vinmedia', logo: VinMedia },
+    { name: 'Sampradayam', logo: Sampradayam },
+  ],
+  bronze: [
+    { name: 'Subishi', logo: Subishi },
+    { name: 'TDF', logo: DummyTDF },
+    // { name: 'TDF', logo: DummyTDF }, // repeated if needed
+    { name: 'Sanghamitra', logo: Sanghamitra },
+  ],
+  community: [
+    { name: 'Bachpan Bachao', logo: BachpanBachao },
+  ],
+  gifting: [
+    { name: 'Dr. Wellness', logo: DrWellness },
+    { name: 'Dr. Ved', logo: DrVed },
+    { name: 'Sweetone', logo: Sweetone },
+    { name: 'jene', logo: Gene },
+    { name: 'Vasudha Foods', logo: VasudhaFoods },
+    { name: 'Trulio', logo: Trulio },
+    { name: 'Srimandiram Exports', logo: Srimandiram },
+    { name: 'Anaganaga', logo: Anaganaga },
   ],
 };
 
-function CopyableItem({ label, value }) {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(value);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy text: ', err);
-    }
-  };
+// --- Reusable Sponsor Section Component ---
+function SponsorSection({ title, sponsors }) {
+  const count = sponsors.length;
+  // Mobile: one column if only one, or two columns if more.
+  const mobileCols = count === 1 ? "grid-cols-1" : "grid-cols-2";
+  
+  // Desktop: if there are 4 or more items use 4 columns, or use as many as available.
+  const desktopCols =
+    count >= 4
+      ? "lg:grid-cols-4"
+      : count === 1
+      ? "lg:grid-cols-1"
+      : count === 2
+      ? "lg:grid-cols-2"
+      : "lg:grid-cols-3";
+  
+  // For sections with fewer than 4 items, constrain the grid's width to fit its content and center it.
+  const containerClass = count >= 4 ? "grid" : "grid max-w-fit mx-auto";
 
   return (
-    <div className="flex items-center justify-between animated-list-item bg-white bg-opacity-5 p-4 rounded-lg cursor-pointer" onClick={handleCopy}>
-      <div>
-        <dt className="font-medium text-[#BBD921]">{label}</dt>
-        <dd className="mt-1">{value}</dd>
+    <div className="mb-10">
+      <h2 className="text-3xl font-semibold text-center mb-6">{title}</h2>
+      <div className={`${containerClass} ${mobileCols} ${desktopCols} gap-6`}>
+        {sponsors.map((sponsor, index) => (
+          <div
+            key={index}
+            className="enhanced-card p-4 flex items-center justify-center bg-white shadow-md rounded-lg hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              className="h-32 object-contain"
+            />
+          </div>
+        ))}
       </div>
-      {copied ? (
-        <Check className="w-5 h-5 text-green-500" />
-      ) : (
-        <Copy className="w-5 h-5 text-gray-400 group-hover:text-gray-600" />
-      )}
     </div>
   );
 }
 
+// --- Main Sponsorships Component ---
 export function Sponsorships() {
   return (
     <div className="content-section">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-12 section-title text-gradient text-center">Our Partners</h1>
-        
-        <div className="mb-6 w-full mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {sponsors.gold.map((sponsor, index) => (
-              <div key={index} className="enhanced-card p-4 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-              </div>
-            ))}
-          </div>
-        </div>
+        <h1 className="text-4xl font-bold mb-12 section-title text-center text-gradient">
+          Our Partners
+        </h1>
 
-        {/* Donation Section */}
-        <div className="mt-16">
-          <div className="enhanced-card p-8 bg-gradient-to-r from-[#243F83] to-[#1a2f61] text-white">
-            <h2 className="text-2xl font-bold mb-6 text-center">Support Our Cause</h2>
-            <div className="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="font-semibold mb-4 text-center">ACCOUNT DETAILS OF THE PARTNER NGO</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <CopyableItem label="ACCOUNT NAME" value="BACHPAN BACHAO" />
-                <CopyableItem label="ACCOUNT NUMBER" value="50200099572967" />
-                <CopyableItem label="BANK NAME" value="HDFC BANK" />
-                <CopyableItem label="IFSC CODE" value="HDFC0004326" />
-              </div>
-              
-              <div className="mt-6 bg-white bg-opacity-5 p-4 rounded-lg">
-                <h4 className="font-semibold mb-2 text-[#BBD921]">Important Notes:</h4>
-                <ul className="list-disc list-inside space-y-2 text-sm">
-                  <li>While Payment "In the Remarks Kindly mention The reason for Donation along with contact number"</li>
-                  <li>All the Donations Made to this Organization are TAX Exempted Under 12A, 80G of Income Tax Act</li>
-                  <li>CSR Donations can also be made to this organization and be a part of CSR</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Gold Sponsors */}
+        <SponsorSection title="Our Gold Partners" sponsors={sponsors.gold} />
 
-        <div className="text-center mt-8">
-          {/* <ContactInfo /> */}
-        </div>
+        {/* Silver Sponsors */}
+        <SponsorSection title="Our Silver Partners" sponsors={sponsors.silver} />
+
+        {/* Bronze Sponsors */}
+        <SponsorSection title="Our Bronze Partners" sponsors={sponsors.bronze} />
+
+        {/* Community Partners */}
+        <SponsorSection title="Our Community Partners" sponsors={sponsors.community} />
+
+        {/* Gifting Partners */}
+        <SponsorSection title="Our Gifting Partners" sponsors={sponsors.gifting} />
       </div>
     </div>
   );
