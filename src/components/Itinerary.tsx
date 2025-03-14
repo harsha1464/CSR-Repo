@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
 
 const timeline = [
-  { time: '10:00 AM - 10:35 AM', event: 'Opening Ceremony', description: 'Welcome address and keynote speech' },
-  { time: '10:35 AM - 11:05 AM', event: 'Speakers 1, 2, 3', description: 'Presentations by Speakers 1, 2, 3' },
-  { time: '11:05 AM - 11:40 AM', event: 'Awards', description: 'Recognition of outstanding contributions' },
-  { time: '11:40 AM - 12:20 PM', event: 'Speakers 4, 5, 6', description: 'Presentations by Speakers 4, 5, 6' },
-  { time: '12:20 PM - 01:00 PM', event: 'Awards', description: 'Recognition of outstanding achievements' },
-  { time: '01:00 PM - 02:00 PM', event: 'Lunch', description: 'Lunch break and networking opportunity' },
-  { time: '02:00 PM - 02:20 PM', event: 'Performance', description: 'Performance by guest artists' },
-  { time: '02:20 PM - 02:50 PM', event: 'Speakers 7, 8, 9', description: 'Presentations by Speakers 7, 8, 9' },
-  { time: '02:50 PM - 04:00 PM', event: 'Awards', description: 'Recognition of outstanding contributions' },
-  { time: '04:00 PM - 04:30 PM', event: 'Hi Tea Break', description: 'Tea break and informal discussions' },
-  { time: '04:30 PM - 05:00 PM', event: 'Speakers 10, 11, 12', description: 'Presentations by Speakers 10, 11, 12' },
-  { time: '05:00 PM - 05:20 PM', event: 'Performance', description: 'Performance by guest artists' },
-  { time: '05:20 PM - 06:30 PM', event: 'Awards', description: 'Recognition of outstanding achievements' },
-  { time: '06:30 PM - 06:50 PM', event: 'Team Bow and Valedictory', description: 'Concluding remarks and farewell' }
+  { time: '10:30 AM - 10:40 AM', event: 'Welcome Address', description: 'Welcome address' },
+  { time: '10:40 AM - 10:50 AM', event: 'Dance', description: 'Dance performance' },
+  { time: '10:50 AM - 11:30 AM', event: 'Speaker 1, 2, 3, 4', description: 'Presentation by Speakers 1, 2, 3, 4' },
+  { time: '11:30 AM - 11:40 AM', event: 'Key Note Speaker - Guest', description: 'Keynote speech by guest speaker' },
+  { time: '11:40 AM - 12:10 PM', event: 'Award Ceremony (1st Phase)', description: 'Recognition of awards' },
+  { time: '12:10 PM - 12:20 PM', event: 'Dance', description: 'Dance performance' },
+  { time: '12:20 PM - 12:50 PM', event: 'Speaker 5, 6, 7', description: 'Presentation by Speakers 5, 6, 7' },
+  { time: '12:50 PM - 01:00 PM', event: 'Key Note Speaker - Guest', description: 'Keynote speech by guest speaker' },
+  { time: '01:00 PM - 01:30 PM', event: 'Award Ceremony (2nd Phase)', description: 'Recognition of awards' },
+  { time: '01:30 PM - 02:40 PM', event: 'Lunch', description: 'Lunch break' },
+  { time: '02:40 PM - 03:20 PM', event: 'Speaker 8, 9, 10', description: 'Presentation by Speakers 8, 9, 10' },
+  { time: '03:20 PM - 03:40 PM', event: 'Key Note Speaker - Guest', description: 'Keynote speech by guest speaker' },
+  { time: '03:40 PM - 04:10 PM', event: 'Award Ceremony (3rd Phase)', description: 'Recognition of awards' },
+  { time: '04:10 PM - 05:00 PM', event: 'Hi Tea Break', description: 'Tea break' },
+  { time: '05:00 PM - 05:20 PM', event: 'Dance Performance', description: 'Dance performance' },
+  { time: '05:20 PM - 06:00 PM', event: 'Speaker 12, 13 , 14, 15', description: 'Presentation by Speakers 12, 13 , 14, 15' },
+  { time: '06:00 PM - 06:10 PM', event: 'Key Note Speaker', description: 'Keynote speech' },
+  { time: '06:10 PM - 06:40 PM', event: 'Award Ceremony (4th Phase)', description: 'Recognition of awards' },
+  { time: '06:40 PM - 06:45 PM', event: 'Team Bow', description: 'Team bow' },
+  { time: '06:45 PM - 07:00 PM', event: 'Goodie Bag Collection', description: 'Goodie bag collection' }
 ];
+
 
 
 export function Itinerary() {
