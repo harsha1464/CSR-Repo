@@ -67,7 +67,30 @@ import Qcity from '../Images/Qcropped-Logo-black.png';
 import AU from '../Images/AU Logo.png'; 
 
 // Entertainment Partners
-import Specdam from '../Images/SPECDAM logo.png'
+import Specdam from '../Images/SPECDAM logo.png';
+
+
+// Experience Zone
+import aashri from '../Images/Experience Zone/aashri.png';
+import allama from '../Images/Experience Zone/Allama Iqbal Educational Society.png';
+import atmt from '../Images/Experience Zone/atmt.png'
+import auisc from '../Images/Experience Zone/AUISC Logo.png';
+import csa from '../Images/Experience Zone/CSA.png';
+import cadets from '../Images/Experience Zone/cadets-2.jpg';
+import drwellness from '../Images/Experience Zone/DR WellnessON TM final log.png';
+import drved from '../Images/Experience Zone/Dr.ved logo.png';
+import hestur from '../Images/Experience Zone/Hestur.png';
+import jeeni from '../Images/Experience Zone/Jeeni.png';
+import keats from '../Images/Experience Zone/Keats.jpg';
+import medicover from '../Images/Experience Zone/Medicover.png';
+import nihasa from '../Images/Experience Zone/Nihasa Aviation and Chopper Hub.jpg';
+import nirmalaya from '../Images/Experience Zone/Nirmalaya.png';
+import pure from '../Images/Experience Zone/PURE.png';
+import rohini from '../Images/Experience Zone/Rohini Foundation.jpeg';
+import shadow from '../Images/Experience Zone/Shadow Puppet Films Logo Final.png';
+import sharamaanvi from '../Images/Experience Zone/SHARAMAANVI Pvt. Ltd..png'
+import specdam from '../Images/Experience Zone/SPECDAM.png';
+
 
 // --- Define Sponsor Data ---
 const sponsors = {
@@ -103,6 +126,31 @@ const sponsors = {
   ],
   Entertainment:[
     { name: 'Specdam', logo: Specdam },
+  ],
+  experienceZone: [
+    { name: 'Aashri', logo: aashri },
+    { name: 'Allama Iqbal Educational Society', logo: allama },
+    { name: 'ATMT', logo: atmt },
+    { name: 'AU', logo: AU },
+    { name: 'AUISC', logo: auisc },
+    { name: 'CSA', logo: csa },
+    { name: 'clickcadets', logo: cadets },
+    { name: 'DR Wellness', logo: drwellness },
+    { name: 'Dr. Ved', logo: drved },
+    { name: 'Hestur', logo: hestur },
+    { name: 'Jeeni', logo: jeeni },
+    { name: 'Keats', logo: keats },
+    { name: 'Medicover', logo: medicover },
+    { name: 'Nihasa Aviation and Chopper Hub', logo: nihasa },
+    { name: 'Nirmalaya', logo: nirmalaya },
+    { name: 'PURE', logo: pure },
+    { name: 'Rohini Foundation', logo: rohini },
+    { name: 'Sanghamitra', logo: Sanghamitra },
+    { name: 'Shadow Puppet Films', logo: shadow },
+    { name: 'SHARAMAANVI Pvt. Ltd.', logo: sharamaanvi },
+    { name: 'SPECDAM', logo: specdam },
+    { name: 'Sweetone', logo: Sweetone },
+    { name: 'Trulio', logo: Trulio },
   ],
 };
 
@@ -173,6 +221,10 @@ export function Sponsorships() {
 
         {/* Gifting Partners */}
         <SponsorSection title="Our Gifting Partners" sponsors={sponsors.gifting} />
+
+        {/* Enperience Zone */}
+        <SponsorSection title="Experience Zone" sponsors={sponsors.experienceZone} />
+
 
         {/* Engagement Partners */}
         <SponsorSection title="Our Engagement Partner" sponsors={sponsors.engagement} />
