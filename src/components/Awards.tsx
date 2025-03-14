@@ -25,7 +25,7 @@ export function Awards() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8 section-title text-gradient">CSR Awards</h1>
         
-        <div className="relative w-full flex justify-center items-center">
+        {/* <div className="relative w-full flex justify-center items-center">
           <button onClick={prevSlide} className="absolute left-0 p-2 bg-black text-white rounded-full shadow-md bg-opacity-50 z-10">
             <FaChevronLeft size={20} />
           </button>
@@ -39,7 +39,7 @@ export function Awards() {
           <button onClick={nextSlide} className="absolute right-0 p-2 bg-black text-white rounded-full bg-opacity-50 shadow-md z-10">
             <FaChevronRight size={20} />
           </button>
-        </div>
+        </div> */}
         
         <br></br>
         <div className="enhanced-card p-8 mb-8 scroll-reveal">
